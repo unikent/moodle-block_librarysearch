@@ -24,6 +24,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2014120400;
+$plugin->version   = 2014120401;
 $plugin->requires  = 2014050800;
 $plugin->component = 'block_librarysearch';

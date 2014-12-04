@@ -86,3 +86,13 @@
 .block_librarysearch.block div.clearfix {
     clear: both;
 }
+
+#region-pre .block_librarysearch.block div.content .form-container .left,
+#region-post .block_librarysearch.block div.content .form-container .left {
+    width: 70%;
+}
+
+#region-pre .block_librarysearch.block div.content .form-container .right,
+#region-post .block_librarysearch.block div.content .form-container .right {
+    width: 30%;
+}

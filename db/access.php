@@ -25,7 +25,15 @@
 defined('MOODLE_INTERNAL') || die();
 
 $capabilities = array(
+    'block/librarysearch:myaddinstance' => array(
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'archetypes' => array(
+            'user' => CAP_ALLOW
+        ),
 
+        'clonepermissionsfrom' => 'moodle/my:manageblocks'
+    ),
     'block/librarysearch:addinstance' => array(
         'riskbitmask' => RISK_SPAM | RISK_XSS,
 

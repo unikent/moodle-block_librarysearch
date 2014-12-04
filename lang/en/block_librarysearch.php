@@ -23,4 +23,5 @@
  */
 
 $string['librarysearch:addinstance'] = 'Add a new library search block';
-$string['pluginname'] = 'LibrarySearch';
+$string['librarysearch:myaddinstance'] = 'Add a new library search block';
+$string['pluginname'] = 'Library Search';
