@@ -96,3 +96,7 @@
 #region-post .block_librarysearch.block div.content .form-container .right {
     width: 30%;
 }
+
+#region-post .block_librarysearch.block div.content {
+    padding-left: 0;
+}
