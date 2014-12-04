@@ -46,26 +46,33 @@ class block_librarysearch extends block_base
         $this->content = new stdClass();
         $this->content->footer = '';
         $this->content->text = <<<HTML
-<form method="get" action="${url}" enctype="application/x-www-form-urlencoded; charset=utf-8" target="_blank">
-<input id="fn" type="hidden" value="search" name="fn">
-<input id="ct" type="hidden" value="search" name="ct">
-<input id="initialSearch" type="hidden" value="true" name="initialSearch">
-<input id="instCode" type="hidden" value="44KEN">
-<input id="pcToken" type="hidden" value="0">
-<input type="hidden" id="mode" name="mode" value="Basic">
-<input type="hidden" id="tab" name="tab" value="default_tab">
-<input type="hidden" id="indx" name="indx" value="1">
-<input type="hidden" id="dum" name="dum" value="true">
-<input type="hidden" name="srt" value="rank" id="str">
-<input type="hidden" id="vid" name="vid" value="44KEN_VU1">
-<input type="hidden" id="frbg" name="frbg" value="">
+        <div class="form-container">
+            <form method="get" action="${url}" enctype="application/x-www-form-urlencoded; charset=utf-8" target="_blank">
+                <input id="fn" type="hidden" value="search" name="fn">
+                <input id="ct" type="hidden" value="search" name="ct">
+                <input id="initialSearch" type="hidden" value="true" name="initialSearch">
+                <input id="instCode" type="hidden" value="44KEN">
+                <input id="pcToken" type="hidden" value="0">
+                <input type="hidden" id="mode" name="mode" value="Basic">
+                <input type="hidden" id="tab" name="tab" value="default_tab">
+                <input type="hidden" id="indx" name="indx" value="1">
+                <input type="hidden" id="dum" name="dum" value="true">
+                <input type="hidden" name="srt" value="rank" id="str">
+                <input type="hidden" id="vid" name="vid" value="44KEN_VU1">
+                <input type="hidden" id="frbg" name="frbg" value="">
+                <input class="EXLSelectedScopeId" type="hidden" value="CSCOP_ALL">
 
 
-<input name="vl(freeText0)" class="" value="" id="search_field" type="text" accesskey="s">
-<input class="EXLSelectedScopeId" type="hidden" value="CSCOP_ALL">
+                <div class="left">
+                    <input name="vl(freeText0)" class="" value="" placeholder="Library search" id="search_field" type="text" accesskey="s">
+                </div>
 
-<input id="goButton" type="submit" value="Search" class="submit" accesskey="g">
-</form>
+                <div class="right">
+                    <input id="goButton" type="submit" value="Search" class="submit" accesskey="g">
+                </div>
+                <div class="clearfix"></div>
+            </form>
+        </div>
 HTML;
 
         return $this->content;
