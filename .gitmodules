@@ -1,0 +1,4 @@
+[submodule "lib/librarysearch"]
+	path = lib/librarysearch
+	url = git@github.com:unikent/lib-php-librarysearch.git
+	branch = master
