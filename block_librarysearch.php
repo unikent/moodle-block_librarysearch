@@ -41,7 +41,8 @@ class block_librarysearch extends block_base
             return $this->content;
         }
 
-        $url = "http://primo-direct-eu-sb.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?fn=search&amp;ct=search";
+        $url = new \unikent\LibrarySearch\URL();
+        $url = $url->get_base_url();
 
         $this->content = new stdClass();
         $this->content->footer = '';
