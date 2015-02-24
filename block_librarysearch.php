@@ -47,15 +47,14 @@ class block_librarysearch extends block_base
         $this->content = new stdClass();
         $this->content->footer = '';
         $this->content->text = <<<HTML
-        <div class="form-container">
+        <div class="form-container bootstrap">
             <form method="POST" action="${url}" target="_blank">
                 <input type="hidden" name="sesskey" value="${sesskey}">
-                <div class="left">
-                    <input name="q" class="" value="" placeholder="Library search" id="search_field" type="text" accesskey="s">
-                </div>
-
-                <div class="right">
-                    <input id="goButton" type="submit" value="Search" class="submit" accesskey="g">
+                <div class="input-group">
+                    <input type="text" name="q" class="form-control" placeholder="Library search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Search</button>
+                    </span>
                 </div>
                 <div class="clearfix"></div>
             </form>
