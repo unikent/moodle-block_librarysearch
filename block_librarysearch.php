@@ -30,8 +30,7 @@ class block_librarysearch extends block_base
 
     public function applicable_formats() {
         return array(
-            'site' => true,
-            'my-index' => true
+            'all' => true
         );
     }
 
