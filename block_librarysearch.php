@@ -35,7 +35,6 @@ class block_librarysearch extends block_base
     }
 
     public function get_content () {
-
         if ($this->content !== null) {
             return $this->content;
         }
@@ -52,7 +51,7 @@ class block_librarysearch extends block_base
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Library search">
                     <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Search</button>
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
                     </span>
                 </div>
                 <div class="clearfix"></div>
