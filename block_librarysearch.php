@@ -44,11 +44,11 @@ class block_librarysearch extends block_base
 
         $this->content = new stdClass();
         $this->content->footer = '';
-        $this->content->text = <<<HTML
+        $this->content->text = <<<HTML5
         <div class="form-container bootstrap">
-            <form method="POST" action="${url}" target="_blank">
+            <form action="${url}" method="POST" target="_blank">
                 <input type="hidden" name="sesskey" value="${sesskey}">
-                <div class="input-group">
+                <div class="input-group input-group-sm">
                     <input type="text" name="q" class="form-control" placeholder="Library search">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
@@ -57,7 +57,7 @@ class block_librarysearch extends block_base
                 <div class="clearfix"></div>
             </form>
         </div>
-HTML;
+HTML5;
 
         return $this->content;
     }
